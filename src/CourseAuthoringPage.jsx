@@ -40,7 +40,7 @@ AppHeader.defaultProps = {
 const AppFooter = () => (
   <div className="mt-6">
     <Footer
-      marketingBaseUrl={process.env.MARKETING_BASE_URL}
+      marketingBaseUrl={process.env.MARKETING_SITE_BASE_URL}
       termsOfServiceUrl={process.env.TERMS_OF_SERVICE_URL}
       privacyPolicyUrl={process.env.PRIVACY_POLICY_URL}
       supportEmail={process.env.SUPPORT_EMAIL}
@@ -76,7 +76,7 @@ const CourseAuthoringPage = ({ courseId, children }) => {
   }
   return (
     <div className={pathname.includes('/editor/') ? '' : 'bg-light-200'}>
-      {/* While V2 Editors are tempoarily served from thier own pages
+      {/* While V2 Editors are temporarily served from their own pages
       using url pattern containing /editor/,
       we shouldn't have the header and footer on these pages.
       This functionality will be removed in TNL-9591 */}
@@ -89,7 +89,7 @@ const CourseAuthoringPage = ({ courseId, children }) => {
             courseId={courseId}
           />
         )
-      )}
+        )}
       {children}
       {!inProgress && showHeader && <AppFooter />}
     </div>
