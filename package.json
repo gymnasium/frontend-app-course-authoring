@@ -18,11 +18,6 @@
     "start": "fedx-scripts webpack-dev-server --progress",
     "test": "fedx-scripts jest --coverage --passWithNoTests"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
-  },
   "author": "edX",
   "license": "AGPL-3.0",
   "homepage": "https://github.com/openedx/frontend-app-course-authoring#readme",
@@ -33,23 +28,24 @@
     "url": "https://github.com/openedx/frontend-app-course-authoring/issues"
   },
   "dependencies": {
-    "@openedx/brand-openedx": "github:gymnasium/brand-openedx#gym.palm.4",
-    "@edx/frontend-component-footer": "11.1.1",
-    "@edx/frontend-lib-content-components": "^1.131.0",
-    "@edx/frontend-platform": "2.5.1",
-    "@edx/paragon": "^20.38.0",
+    "@edx/frontend-component-footer": "github:gymnasium/frontend-component-footer#gym.palm.4",
+    "@edx/frontend-component-header": "github:gymnasium/frontend-component-header#gym.palm.4",
+    "@edx/frontend-lib-content-components": "^1.178.0",
+    "@edx/frontend-platform": "4.2.0",
+    "@edx/paragon": "20.46.3",
     "@fortawesome/fontawesome-svg-core": "1.2.28",
     "@fortawesome/free-brands-svg-icons": "5.11.2",
     "@fortawesome/free-regular-svg-icons": "5.11.2",
     "@fortawesome/free-solid-svg-icons": "5.11.2",
     "@fortawesome/react-fontawesome": "0.1.9",
-    "@reduxjs/toolkit": "1.5.0",
+    "@openedx/brand-openedx": "github:gymnasium/brand-openedx#gym.palm.4",
+    "@reduxjs/toolkit": "^1.9.7",
     "classnames": "2.2.6",
     "core-js": "3.8.1",
     "email-validator": "2.0.4",
     "formik": "2.2.6",
     "lodash": "4.17.21",
-    "moment": "2.29.2",
+    "moment": "^2.30.1",
     "prop-types": "15.7.2",
     "react": "16.14.0",
     "react-dom": "16.14.0",
@@ -65,8 +61,8 @@
     "yup": "0.31.1"
   },
   "devDependencies": {
-    "@edx/browserslist-config": "1.0.0",
-    "@edx/frontend-build": "12.9.17",
+    "@edx/browserslist-config": "1.2.0",
+    "@edx/frontend-build": "npm:@openedx/frontend-build@13.0.24",
     "@edx/reactifex": "^1.0.3",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "12.1.1",
